@@ -13,10 +13,21 @@ body {
     border: 1px solid black;
     height: 150px;
     width: 150px;
+    position: absolute;
+    backface-visibility: hidden;
+    background-color: antiquewhite;
+}
+.parent {
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
 }
 .backCell {
     height: 150px;
     width: 150px;
+    backface-visibility: hidden;
+    transform: rotateY(180deg);
+    border: 1px solid black;
 }
 
 @media (max-width: 600px) {
@@ -33,4 +44,7 @@ body {
     .container {
         grid-template-columns: repeat(3, 150px);
     }
+}
+.parent.flipped {
+    transform: rotateY(180deg);
 }

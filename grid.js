@@ -17,4 +17,8 @@ for (let i = 65; i < 91; i++) {
     
 
     cell.innerText = alphabet;
+
+    parent.addEventListener("click", ()=>{
+        parent.classList.toggle("flipped")    
+    })
 }
