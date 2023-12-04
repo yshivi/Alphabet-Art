@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Alphabet Art</title>
-        <link rel="stylesheet" href="style.css" />
-        <link href='https://fonts.googleapis.com/css?family=Mochiy Pop One' rel='stylesheet'>
-    </head>
-    <body>
-        <!-- This container contains cards, the cards will create by using javaScript -->
-        <div class="container">  
-            
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Alphabet Art</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Mochiy Pop One"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <img class="logo" src="backCardImages/logo/logo.jpg" />
+      <div class="nav-bar">
+        <!---This is for menu-bar-->
+
+        <div class="nav-items" id="item-1">
+          <div class="navImg"></div>
+          <h5 class="nav-text">Workshop</h5>
         </div>
 
-        <script src="main.js"></script>
-    </body>
+        <div class="nav-items" id="item-2">
+          <div class="navImg"></div>
+          <h5 class="nav-text">Contest</h5>
+        </div>
+
+        <div class="nav-items" id="item-3">
+          <div class="navImg"></div>
+          <h5 class="nav-text">Stickers</h5>
+        </div>
+      </div>
+    </header>
+    <br>
+    <div class="carouselContainer">
+      <img
+        class="carouselImg"
+        src="backCardImages/carouselImages/IMAGE.png"
+        alt=""
+      />
+      <div class="dotContainer">
+        <span id="dot1" class="dot"></span>
+        <span id="dot2" class="dot"></span>
+        <span id="dot3" class="dot"></span>
+      </div>
+    </div>
+    <!-- This container contains cards, the cards will create by using javaScript -->
+    <div class="container"></div>
+
+    <script src="main.js"></script>
+  </body>
 </html>

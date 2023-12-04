@@ -1,5 +1,23 @@
 let container = document.querySelector(".container");
+let carouselImg = document.querySelector(".carouselImg")
+let dots = document.querySelectorAll(".dot")
+
+let i = 0;
 let alphabet;       //This variable is used to create A to Z capital alphabets.
+
+const crslImg = [
+  "backCardImages/carouselImages/IMAGE.png",
+  "backCardImages/carouselImages/img2.jpeg",
+  "backCardImages/carouselImages/img4.jpeg"
+]
+
+autoplay = setInterval(function () {
+  i++;
+  if (i >= 3) i = 0;
+  carouselImg.setAttribute("src", crslImg[i]);
+  dots[i].className = dots[i].className.replace(" active", "");
+}, 2000);
+
 
 //this array for the background design of the front cards, in which we will put 6 different designs in the background of the front card with the help of loop.
 let design = ["design1", "design2", "design3", "design4", "design5", "design6"];
@@ -35,7 +53,7 @@ for (let i = 65, j = 0; i < 91; i++, j++) {
   frontCard.appendChild(text);
   text.innerText = alphabet;
 
-  img.setAttribute("src", `backCardImages/${alphabet.toLowerCase()}.png`); //Now we have to set image in back face of card, we write [i - 65] because in above loop we started i from 65 but our image position is starting from 0. So for changing i value 65 to 0 we write backgroundImage[i - 65]
+  img.setAttribute("src", `backCardImages/${alphabet.toLowerCase()}.png`); //set image in back face of card, we write [i - 65] because in above loop we started i from 65 but our image position is starting from 0. So for changing i value 65 to 0 we write backgroundImage[i - 65]
 
   // Flip on click
   cardsContainer.addEventListener("click", () => {   

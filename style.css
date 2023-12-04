@@ -1,6 +1,57 @@
 body {
   margin: 0;
   background-color: rgb(245, 232, 234);
+  text-align: center;
+}
+
+.logo {
+  width: 400px;
+  height: 100px;
+}
+
+.nav-bar {
+  display: flex;
+  background-color: #1375E4;
+  height: 150px;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.navImg{
+  height: 80px;
+  width: 80px;
+  background-color: #ffff;
+  border-radius: 50px;
+}
+.nav-text{
+  font-family: 'Mochiy Pop One';
+  color: #ffff;
+  margin-top: 3px;
+}
+
+.nav-items{
+  margin: 20px;
+}
+.carouselContainer {
+  align-items: center;
+}
+
+.carouselImg {
+  width: 100%;
+  height: 400px;
+}
+
+.dotContainer {
+  text-align: center;
+}
+
+.dot {
+  height: 7.7px;
+  width: 8px;
+  margin: 0 2px;
+  background-color: #bbb2b2;
+  border-radius: 50%;
+  display: inline-block;
 }
 
 .container {
@@ -105,9 +156,37 @@ body {
 }
 
 /*This media query will make 2 columns when the max screen display should be 600px*/
-@media (max-width: 600px) {
+@media(max-width: 600px) {
   .container {
     grid-template-columns: repeat(2, 160px);
+  }
+
+  .carouselImg {
+    width: 370px;
+    height: 195px;
+  }
+  .logo{
+    width: 300px;
+    height: 70px;
+  }
+}
+
+@media(max-width: 360px) {
+  .container {
+    grid-template-columns: repeat(1, 160px);
+  }
+
+  .carouselImg {
+    width: 300px;
+    height: 175px;
+  }
+  .logo{
+    width: 250;
+    height: 50px;
+  }
+  .navImg{
+    height: 50px;
+    width: 50px;
   }
 }
 
