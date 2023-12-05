@@ -14,24 +14,37 @@ body {
   background-color: #1375E4;
   height: 150px;
   width: 100%;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
-.navImg{
-  height: 80px;
-  width: 80px;
-  background-color: #ffff;
-  border-radius: 50px;
+.navImg {
+  height: 70px;
+  width: 70px;
+  margin: 10px;
+ 
 }
-.nav-text{
+.navimages{
+  border-radius: 50px;
+  height: 70px;
+  width: 70px;
+}
+.nav-text {
   font-family: 'Mochiy Pop One';
   color: #ffff;
-  margin-top: 3px;
+  margin-top: 18px;
+}
+.nav-items:hover{
+  /* height: 96px;
+  margin: 14px; */
+  border: 5px solid #3990f4;
+}
+.nav-items:hover .navImg{
+  border: dotted 2px #3990f4;
+}
+.nav-items:hover .nav-text {
+  border: 2px dotted #3990f4;
 }
 
-.nav-items{
-  margin: 20px;
-}
 .carouselContainer {
   align-items: center;
 }
@@ -165,7 +178,8 @@ body {
     width: 370px;
     height: 195px;
   }
-  .logo{
+
+  .logo {
     width: 300px;
     height: 70px;
   }
@@ -180,11 +194,13 @@ body {
     width: 300px;
     height: 175px;
   }
-  .logo{
+
+  .logo {
     width: 250;
     height: 50px;
   }
-  .navImg{
+
+  .navImg {
     height: 50px;
     width: 50px;
   }
