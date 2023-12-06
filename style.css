@@ -21,26 +21,31 @@ body {
   height: 70px;
   width: 70px;
   margin: 10px;
- 
+
 }
-.navimages{
+
+.navimages {
   border-radius: 50px;
   height: 70px;
   width: 70px;
 }
+
 .nav-text {
   font-family: 'Mochiy Pop One';
   color: #ffff;
   margin-top: 18px;
 }
-.nav-items:hover{
+
+.nav-items:hover {
   /* height: 96px;
   margin: 14px; */
   border: 5px solid #3990f4;
 }
-.nav-items:hover .navImg{
+
+.nav-items:hover .navImg {
   border: dotted 2px #3990f4;
 }
+
 .nav-items:hover .nav-text {
   border: 2px dotted #3990f4;
 }
@@ -100,15 +105,27 @@ body {
 
 /* transform: rotateY will help to rotate our back side card 180degree in y axis */
 .backCard {
+  position: relative;
   height: 180px;
   width: 160px;
   backface-visibility: hidden;
   transform: rotateY(180deg);
   border-radius: 24.74px;
-  border: 0px, 0px, 6.18px, 0px;
+}
+
+.imgMeaning {
+  position: absolute;
+  top: 70%;
+  left: 29%;
+  color: rgb(241, 71, 99);
+  background-color: rgb(252, 245, 245);
+  font-size: 1.1em;
+  font-family: 'Mochiy Pop One';
+  font-weight: 700;
 }
 
 .img {
+
   width: 100%;
   height: 100%;
   border-radius: 24.74px;
