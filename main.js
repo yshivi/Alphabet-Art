@@ -6,30 +6,34 @@ let i = 0;
 let alphabet;       //This variable is used to create A to Z capital alphabets.
 
 const crslImg = [
-  "backCardImages/carouselImages/IMAGE.png",
-  "backCardImages/carouselImages/img2.jpeg",
-  "backCardImages/carouselImages/img4.jpeg"
+  "assets/carouselImages/IMAGE.png",
+  "assets/carouselImages/img2.jpeg",
+  "assets/carouselImages/img4.jpeg"
 ]
-
-autoplay = setInterval(function () {
+const wordPro = [
+  "apple", "ball", "cat", "dog", "elephat", "fish",
+  "giraffe", "horse", "igloo", "joker", "king", "lion",
+  "monkey", "nose", "octopus", "pen", "queen",
+  "rabbit", "snake", "tiger", "umbrella", "van",
+  "watermellon", "x-ray", "yak", "zebra"
+]
+setInterval(function () {
   i++;
-  if (i >= 3) i = 0;
+  let selectedDotId = "#dot"+ i;
+  let selectedDot = document.querySelector(selectedDotId);  
+  // console.log(selectedDot);
+  dots.forEach(dot=>dot.style.backgroundColor = "white")
+  selectedDot.style.backgroundColor = "black";
+  if (i >= 3) 
+    i = 0;
   carouselImg.setAttribute("src", crslImg[i]);
-  // dots.style.backgroundcolor = "black"
 }, 2000);
-
-const imgName = [
-  "Apple", "Ball", "Cat", "Dog", "Elephant","Fish",
-  "Giraffe","Horse", "Igloo", "Joker", "King", "Lion", "Monkey",
-  "Nose", "Octopus","Pen", "Queen", "Rabbit", "Snake",
-  "Tiger", "Umbrella", "Van", "Watermelon", "X-ray", "Yak", "Zebra"
-]
 
 //this array for the background design of the front cards, in which we will put 6 different designs in the background of the front card with the help of loop.
 let design = ["design1", "design2", "design3", "design4", "design5", "design6"];
 
 //In this loop the i is running 65 to 90, which is creating 26 divs and j is working for the design array.
-for (let i = 65, k=0, j = 0; i < 91, k < 26; i++, j++,k++) {
+for (let i = 65, k=0, j = 0; i < 91; k++, i++, j++) {
   if (j >= 6)
     //This condition is telling that our j will run till 6, when the value of j exceeds 6 then the value of j will again become 0.
     j = 0;
@@ -42,7 +46,17 @@ for (let i = 65, k=0, j = 0; i < 91, k < 26; i++, j++,k++) {
   let cardsContainer = document.createElement("div");
   let img = document.createElement("img");
   let text = document.createElement("p");
-  let imgMeaning = document.createElement("p")
+  let imgText = document.createElement("p");
+  let imgIconOne = document.createElement("img")
+  let imgIconTwo = document.createElement("img")
+  let imgIconThree = document.createElement("img")
+  let bckcardtext = document.createElement("p")
+  
+
+  imgIconOne.src = "assets/backImgIcon/heartIcon.png"
+  imgIconTwo.src = "assets/backImgIcon/sizeIcon.png"
+  imgIconThree.src = "assets/backImgIcon/shareIcon.png"
+
 
   //give class to div or tag we have created
   cardsContainer.setAttribute("class", "cardsContainer");
@@ -51,7 +65,12 @@ for (let i = 65, k=0, j = 0; i < 91, k < 26; i++, j++,k++) {
   cardsContainer.setAttribute("class", "cardsContainer");
   img.setAttribute("class", "img");
   text.setAttribute("class", "text");
-  imgMeaning.setAttribute("class", "imgMeaning")
+  imgText.setAttribute("class", "bckImgText");
+  imgIconOne.setAttribute("id", "imgIconOne")
+  imgIconTwo.setAttribute("id", "imgIconTwo")
+  imgIconThree.setAttribute("id", "imgIconThree")
+  bckcardtext.setAttribute("class", "bckcardtext")
+
   frontCard.classList.add(design[j]);
 
   //append all the divs and elements with the ones we have created for them.
@@ -60,18 +79,28 @@ for (let i = 65, k=0, j = 0; i < 91, k < 26; i++, j++,k++) {
   cardsContainer.appendChild(backCard);
   backCard.appendChild(img);
   frontCard.appendChild(text);
-  backCard.appendChild(imgMeaning)
+  backCard.appendChild(imgText);
+  backCard.appendChild(bckcardtext);
+  backCard.appendChild(imgIconOne);
+  backCard.appendChild(imgIconTwo)
+  backCard.appendChild(imgIconThree);
+  imgText.innerText = wordPro[k]; 
   text.innerText = alphabet;
-  imgMeaning.innerText = imgName[k];
+  bckcardtext.innerText = "Aligator";
 
-  img.setAttribute("src", `backCardImages/${alphabet.toLowerCase()}.png`); //set image in back face of card, we write [i - 65] because in above loop we started i from 65 but our image position is starting from 0. So for changing i value 65 to 0 we write backgroundImage[i - 65]
-  
+
+  img.setAttribute("src", `assets/c.png`); //set image in back face of card, we write [i - 65] because in above loop we started i from 65 but our image position is starting from 0. So for changing i value 65 to 0 we write backgroundImage[i - 65]
 
   // Flip on click
   cardsContainer.addEventListener("click", () => {
     cardsContainer.classList.toggle("flipped");
-    let speakMsg = new SpeechSynthesisUtterance();
-    speakMsg.text = imgName[k];
-    window.speechSynthesis.speak(speakMsg)
-  });;
+    let msg = new SpeechSynthesisUtterance();
+    msg.text = wordPro[k];
+    window.speechSynthesis.speak(msg)
+  });
+  let redHeart = 
+  imgIconOne.addEventListener("click", () =>{
+    //imgIconOne.style.backgroundColor = "red"
+    imgIconOne.src = "assets/backImgIcon/heartRed.png"
+  })
 }
