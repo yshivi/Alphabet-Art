@@ -11,10 +11,10 @@ const crslImg = [
   "assets/carouselImages/img4.jpeg"
 ]
 const wordPro = [
-  "apple", "ball", "cat", "dog", "elephat", "fish",
-  "giraffe", "horse", "igloo", "joker", "king", "lion",
-  "monkey", "nose", "octopus", "pen", "queen",
-  "rabbit", "snake", "tiger", "umbrella", "van",
+  "apple", "ball", "cat", "dog", "elephant", "fish",
+  "goat", "horse", "igloo", "joker", "kite", "lion",
+  "monkey", "nose", "octopus", "pig", "queen",
+  "rocket", "snake", "tiger", "umbrella", "van",
   "watermellon", "x-ray", "yak", "zebra"
 ]
 setInterval(function () {
@@ -40,7 +40,7 @@ for (let i = 65, k=0, j = 0; i < 91; k++, i++, j++) {
 
   alphabet = String.fromCharCode(i);
 
-  //creating divs
+  //creating divs and img tags
   let frontCard = document.createElement("div");
   let backCard = document.createElement("div");
   let cardsContainer = document.createElement("div");
@@ -50,9 +50,9 @@ for (let i = 65, k=0, j = 0; i < 91; k++, i++, j++) {
   let imgIconOne = document.createElement("img")
   let imgIconTwo = document.createElement("img")
   let imgIconThree = document.createElement("img")
-  let bckcardtext = document.createElement("p")
-  
 
+  
+//.........Giving icon src path to img tag.......
   imgIconOne.src = "assets/backImgIcon/heartIcon.png"
   imgIconTwo.src = "assets/backImgIcon/sizeIcon.png"
   imgIconThree.src = "assets/backImgIcon/shareIcon.png"
@@ -69,7 +69,6 @@ for (let i = 65, k=0, j = 0; i < 91; k++, i++, j++) {
   imgIconOne.setAttribute("id", "imgIconOne")
   imgIconTwo.setAttribute("id", "imgIconTwo")
   imgIconThree.setAttribute("id", "imgIconThree")
-  bckcardtext.setAttribute("class", "bckcardtext")
 
   frontCard.classList.add(design[j]);
 
@@ -80,16 +79,14 @@ for (let i = 65, k=0, j = 0; i < 91; k++, i++, j++) {
   backCard.appendChild(img);
   frontCard.appendChild(text);
   backCard.appendChild(imgText);
-  backCard.appendChild(bckcardtext);
   backCard.appendChild(imgIconOne);
   backCard.appendChild(imgIconTwo)
   backCard.appendChild(imgIconThree);
   imgText.innerText = wordPro[k]; 
   text.innerText = alphabet;
-  bckcardtext.innerText = "Aligator";
 
 
-  img.setAttribute("src", `assets/c.png`); //set image in back face of card, we write [i - 65] because in above loop we started i from 65 but our image position is starting from 0. So for changing i value 65 to 0 we write backgroundImage[i - 65]
+  img.setAttribute("src", `assets/${alphabet.toLowerCase()}.png`); //set image in back face of card, we write [i - 65] because in above loop we started i from 65 but our image position is starting from 0. So for changing i value 65 to 0 we write backgroundImage[i - 65]
 
   // Flip on click
   cardsContainer.addEventListener("click", () => {

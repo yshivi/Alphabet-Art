@@ -70,13 +70,11 @@ nav {
 }
 
 .container {
-  /* width: 50%;
-  max-height: 400px; */
   margin: auto;
   display: grid;
   justify-content: space-around;
   padding: 20px;
-  grid-template-columns: repeat(2, minmax(150px, 350px));
+  grid-template-columns: repeat(2, minmax(150px, 300px));
   grid-template-rows: repeat(2, 1fr);
   gap: 20px;
   width: 80%;
@@ -86,8 +84,9 @@ nav {
   position: relative;
   transition: transform 1s;
   transform-style: preserve-3d;
-  box-shadow: 0px 8px 10px 0px;
   border-radius: 10%;
+  box-shadow: 0px 8px 10px 0px;
+
 }
 
 .frontCard {
@@ -108,7 +107,7 @@ nav {
 /* transform: rotateY will help to rotate our back side card 180degree in y axis */
 .backCard {
   position: relative;
-  height: 100%;
+  min-height: 210px;
   width: 100%;
   backface-visibility: hidden;
   transform: rotateY(180deg);
@@ -118,11 +117,10 @@ nav {
 
 .bckImgText {
   position: absolute;
-  top: 0%;
+  top: 70%;
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
-  background-color: white;
   border-radius: 20%;
   font-family: 'Mochiy Pop One';
 }
@@ -132,15 +130,6 @@ nav {
   top: 87%;
   left: 10%;
   border-radius: 40%
-}
-
-.bckcardtext {
-  position: absolute;
-  top: 74%;
-  margin: 0;
-  left: 50%;
-  transform: translateX(-50%);
-
 }
 
 #imgIconTwo {
@@ -156,7 +145,6 @@ nav {
 }
 
 .img {
-  margin-top: 5px;
   width: 100%;
   height: 75%;
   border-radius: 10%;
@@ -225,30 +213,222 @@ nav {
 
 @media only screen and (min-width: 768px) {
   .container {
-    grid-template-columns: repeat(3, minmax(220px, 1fr));
+    grid-template-columns: repeat(2, minmax(220px, 1fr));
   }
 
   .text {
-    font-size: 10em;
+    font-size: 12em;
   }
 
   .bckImgText {
     position: absolute;
-    top: 4%;
+    top: 73.5%;
     left: 50%;
     transform: translateX(-50%);
     margin: 0;
     background-color: white;
     border-radius: 20%;
     font-family: 'Mochiy Pop One';
+    font-size: 1.5em;
   }
 
-  .bckcardtext {
+  .backCard {
+    min-height: 400px;
+    width: 100%;
+  }
+  #imgIconOne {
     position: absolute;
-    top: 78%;
-    margin: 0;
+    top: 87%;
+    left: 10%;
+    border-radius: 40%;
+    height: 32px;
+    width: 32px;
+
+  }
+  
+  #imgIconTwo {
+    position: absolute;
+    top: 88%;
+    left: 45%;
+    height: 24px;
+    width: 24px;
+  }
+  
+  #imgIconThree {
+    position: absolute;
+    top: 87%;
+    left: 80%;
+    height: 31px;
+    width: 31px;
+  }
+
+
+}
+
+@media only screen and (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+  }
+
+  .text {
+    font-size: 18em;
+
+  }
+
+  .bckImgText {
+    position: absolute;
+    top: 70%;
     left: 50%;
     transform: translateX(-50%);
+    margin: 0;
+    background-color: white;
+    border-radius: 20%;
+    font-family: 'Mochiy Pop One';
+    font-size: 1.8em;
+  }
+
+  .backCard {
+    min-height: 380px;
+    width: 100%;
+  }
+
+  #imgIconOne {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    border-radius: 40%;
+    height: 30px;
+    width: 30px;
 
   }
+  
+  #imgIconTwo {
+    position: absolute;
+    top: 86%;
+    left: 45%;
+    height: 27px;
+    width: 27px;
+  }
+  
+  #imgIconThree {
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    height: 30px;
+    width: 30px;
+  }
+
 }
+
+@media only screen and (min-width: 1280px) {
+  .container {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+  }
+
+  .text {
+    font-size: 14em;
+
+  }
+
+  .bckImgText {
+    position: absolute;
+    top: 76%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    background-color: white;
+    border-radius: 20%;
+    font-family: 'Mochiy Pop One';
+    font-size: 1.7em;
+  }
+
+  .backCard {
+    min-height: 450px;
+    width: 100%;
+  }
+
+  #imgIconOne {
+    position: absolute;
+    top: 89%;
+    left: 10%;
+    border-radius: 40%;
+    height: 30px;
+    width: 30px;
+
+  }
+  
+  #imgIconTwo {
+    position: absolute;
+    top: 89.5%;
+    left: 45%;
+    height: 20px;
+    width: 20px;
+  }
+  
+  #imgIconThree {
+    position: absolute;
+    top: 89%;
+    left: 80%;
+    height: 30px;
+    width: 30px;
+  }
+
+}
+
+
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    grid-template-columns: repeat(3, minmax(220px, 1fr));
+  }
+
+  .text {
+    font-size: 18em;
+
+  }
+
+  .bckImgText {
+    position: absolute;
+    top: 72%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    background-color: white;
+    border-radius: 20%;
+    font-family: 'Mochiy Pop One';
+    font-size: 2em;
+  }
+
+  .backCard {
+    min-height: 500px;
+    width: 100%;
+  }
+
+  #imgIconOne {
+    position: absolute;
+    top: 85%;
+    left: 10%;
+    border-radius: 40%;
+    height: 50px;
+    width: 50px;
+
+  }
+  
+  #imgIconTwo {
+    position: absolute;
+    top: 86%;
+    left: 45%;
+    height: 40px;
+    width: 40px;
+  }
+  
+  #imgIconThree {
+    position: absolute;
+    top: 85%;
+    left: 80%;
+    height: 50px;
+    width: 50px;
+  }
+
+}
+
