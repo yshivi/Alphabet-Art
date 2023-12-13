@@ -83,6 +83,8 @@ for (let i = 65, k = 0, j = 0; i < 91; k++, i++, j++) {
   iconContainer.appendChild(imgIconOne);
   iconContainer.appendChild(imgIconTwo);
   iconContainer.appendChild(imgIconThree);
+  
+
   imgText.innerText = wordPro[k];
   text.innerText = alphabet;
 
