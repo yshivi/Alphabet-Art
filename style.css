@@ -1,11 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Mochiy Pop One");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css");
 
-/* * {
-  border: 1px solid red;
-} */
 body {
   margin: 0;
-  background-color: rgb(245, 232, 234);
+  background-image: url(assets/logo/BackgroundPattern.png);
 }
 
 header {
@@ -19,21 +17,19 @@ nav {
   justify-content: space-evenly;
 }
 
-.nav-image {
+.nav-item img {
   max-width: 60px;
   border-radius: 50%;
-  /* border: 1px solid red; */
   margin-top: 10px;
 }
 
-.nav-text {
+.nav-item p {
   font-family: 'Mochiy Pop One';
   font-weight: 400;
   font-size: 1em;
   margin-top: -3px;
   margin-bottom: 5px;
   color: #ffff;
-  /* border: 1px solid red; */
 }
 
 .nav-item:hover {
@@ -56,7 +52,7 @@ nav {
   margin-top: -30px;
 }
 
-.dot {
+.dotContainer span {
   height: 7.7px;
   width: 8px;
   margin: 0 2px;
@@ -98,12 +94,10 @@ nav {
   justify-content: center;
   align-items: center;
   border-radius: 10%;
-  /* border: 0px, 0px, 6.18px, 0px; */
 }
 
 /* transition property is used for controling time of flipping card */
 /* transform-style will help for showing the back side of card */
-
 /* transform: rotateY will help to rotate our back side card 180degree in y axis */
 .backCard {
   position: relative;
@@ -117,11 +111,10 @@ nav {
 
 .bckImgText {
   position: absolute;
-  top: 71%;
+  top: 73.4%;
   left: 50%;
   transform: translateX(-50%);
   margin: 0;
-  border-radius: 20%;
   font-family: 'Mochiy Pop One';
 }
 
@@ -146,7 +139,7 @@ nav {
 
 .img {
   width: 100%;
-  height: 73%;
+  height: 72%;
   border-radius: 10%;
 }
 
@@ -165,39 +158,57 @@ nav {
 
 /* In below design1 to design6, these radial-gradient property makes background designs on front card */
 .design1 {
-  background: url(assets/svgPatterns/pattern1.svg);
+  background-image: url(assets/svgPatterns/pattern1.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #FFB800;
   color: #FF8A00;
+  border-bottom: 5px solid #BF6800;
 }
 
 .design2 {
-  background: url(assets/svgPatterns/pattern2.svg);
+  background-image: url(assets/svgPatterns/pattern2.svg);
   background-color: #A55FEF;
   color: #8030D4;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid #8030D4
 }
 
 .design3 {
-  background: url(assets/svgPatterns/pattern3.svg);
+  background-image: url(assets/svgPatterns/pattern3.svg);
   background-color: #59AFFF;
   color: #1F7AE0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 5px solid #1375E4;
 }
 
 .design4 {
-  background: url(assets/svgPatterns/pattern4.svg);
+  background-image: url(assets/svgPatterns/pattern4.svg);
   background-color: #F36291;
   color: #DA2D65;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid #DA2D65
 }
 
 .design5 {
-  background: url(assets/svgPatterns/paatern5.svg);
+  background-image: url(assets/svgPatterns/paatern5.svg);
   background-color: #F26335;
   color: #a52802;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid #BF6800
 }
 
 .design6 {
-  background: url(assets/svgPatterns/pattern6.svg);
+  background-image: url(assets/svgPatterns/pattern6.svg);
   background-color: #2ACA9B;
   color: #007352;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-bottom: 3px solid #1BB486
 }
 
 .cardsContainer.flipped {
@@ -213,9 +224,8 @@ nav {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.003em;
   color: #ffff;
-  font-size: 20px;
-  /* top  right  bottom  left */
-  margin-left: 40px;
+  font-size: 1.2em;
+  margin-left: 43px;
   padding: 40px 0 0 0;
 }
 
@@ -246,35 +256,32 @@ nav {
   opacity: 0.6;
 }
 
-.footer-text {
+.footer-text-ul>li {
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.05em;
   color: #ffff;
   list-style: none;
   padding: 5px;
+  font-size: 1.2em;
 }
 
-.sajhe-logo {
+.footer-sajheLogo-div>img {
   border-radius: 50%;
-  /* top  right  bottom  left */
-  margin: 10px 0px 15px 37px;
+  max-height: 50px;
+  margin-left: 43px;
 }
 
-.sajhe-web {
+.sajhe-web-divs>a {
   text-decoration: none;
   color: #ffff;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: 0.05em;
+  font-size: 1.2em;
 }
 
 .sajhe-web-divs {
   padding: 0 0 40px 0;
   margin-left: 45px;
-}
-
-.sajhe-web:hover {
-  opacity: 0.9;
-  color: blue;
 }
 
 /*............................................. media queries.................................... */
@@ -328,42 +335,6 @@ nav {
     left: 80%;
     height: 31px;
     width: 31px;
-  }
-
-  .design1 {
-    background: url(assets/svgPatterns/pattern1SSE.svg);
-    background-color: #FFB800;
-    color: #FF8A00;
-  }
-
-  .design2 {
-    background: url(assets/svgPatterns/pattern2sse.svg);
-    background-color: #A55FEF;
-    color: #8030D4;
-  }
-
-  .design3 {
-    background: url(assets/svgPatterns/pattern3SSE.svg);
-    background-color: #59AFFF;
-    color: #1F7AE0;
-  }
-
-  .design4 {
-    background: url(assets/svgPatterns/pattern4SSE.svg);
-    background-color: #F36291;
-    color: #DA2D65;
-  }
-
-  .design5 {
-    background: url(assets/svgPatterns/pattern5SSE.svg);
-    background-color: #F26335;
-    color: #a52802;
-  }
-
-  .design6 {
-    background: url(assets/svgPatterns/pattern6SSE.svg);
-    background-color: #2ACA9B;
-    color: #007352;
   }
 
 }
@@ -475,45 +446,6 @@ nav {
     height: 30px;
     width: 30px;
   }
-
-  .design1 {
-    background: url(assets/svgPatterns/pattern1OTTHE.svg);
-    background-color: #FFB800;
-    color: #FF8A00;
-  }
-
-  .design2 {
-    background: url(assets/svgPatterns/pattern2OTTHE.svg);
-    background-color: #A55FEF;
-    color: #8030D4;
-  }
-
-  .design3 {
-    background: url(assets/svgPatterns/pattern3OTTHE.svg);
-    background-color: #59AFFF;
-    color: #1F7AE0;
-  }
-
-  .design4 {
-    background: url(assets/svgPatterns/pattern4OTTHE.svg);
-    background-color: #F36291;
-    color: #DA2D65;
-  }
-
-  .design5 {
-    background: url(assets/svgPatterns/pattern.5OTTHE.svg);
-    background-color: #F26335;
-    color: #a52802;
-  }
-
-  .design6 {
-    background: url(assets/svgPatterns/pattern.6OTTHE.svg);
-    background-color: #2ACA9B;
-    color: #007352;
-  }
-
-
-
 }
 
 
@@ -569,41 +501,5 @@ nav {
     left: 80%;
     height: 50px;
     width: 50px;
-  }
-
-  .design1 {
-    background: url(assets/svgPatterns/pattern1440.svg);
-    background-color: #FFB800;
-    color: #FF8A00;
-  }
-
-  .design2 {
-    background: url(assets/svgPatterns/pattern21440.svg);
-    background-color: #A55FEF;
-    color: #8030D4;
-  }
-
-  .design3 {
-    background: url(assets/svgPatterns/pattern31440.svg);
-    background-color: #59AFFF;
-    color: #1F7AE0;
-  }
-
-  .design4 {
-    background: url(assets/svgPatterns/pattern41440.svg);
-    background-color: #F36291;
-    color: #DA2D65;
-  }
-
-  .design5 {
-    background: url(assets/svgPatterns/pattern51440.svg);
-    background-color: #F26335;
-    color: #a52802;
-  }
-
-  .design6 {
-    background: url(assets/svgPatterns/pattern.61440.svg);
-    background-color: #2ACA9B;
-    color: #007352;
   }
 }

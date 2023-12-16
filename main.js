@@ -2,14 +2,9 @@ let container = document.querySelector(".container");
 let carouselImg = document.querySelector(".carouselImg");
 let dots = document.querySelectorAll(".dot");
 
-let i = 0;
+let i = 0;    //This variable is for carousel    
 let alphabet; //This variable is used to create A to Z capital alphabets.
 
-const crslImg = [
-  "assets/carouselImages/IMAGE.png",
-  "assets/carouselImages/img2.jpeg",
-  "assets/carouselImages/img4.jpeg",
-];
 const wordPro = [
   "apple","ball","cat","dog","elephant",
   "fish","goat","horse","igloo","joker",
@@ -18,6 +13,12 @@ const wordPro = [
   "umbrella","van","watermellon","x-ray",
   "yak","zebra",
 ];
+const crslImg = [
+  "assets/carouselImages/IMAGE.png",
+  "assets/carouselImages/img2.jpeg",
+  "assets/carouselImages/img4.jpeg",
+];
+
 setInterval(function () {
   i++;
   let selectedDotId = "#dot" + i;
@@ -84,7 +85,6 @@ for (let i = 65, k = 0, j = 0; i < 91; k++, i++, j++) {
   iconContainer.appendChild(imgIconTwo);
   iconContainer.appendChild(imgIconThree);
   
-
   imgText.innerText = wordPro[k];
   text.innerText = alphabet;
 
