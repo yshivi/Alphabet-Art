@@ -1,75 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/41c3f97ee8.js" crossorigin="anonymous"></script>
     <title>Alphabet Art</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-
-  <body>
+</head>
+<body>
     <header>
-      <nav>
-        <div class="nav-item">
-          <img src="assets/navImages/workshop.png" alt="Workshop Icon" />
-          <p>Workshop</p>
+        <!-- <Logo/> -->
+        <div class="logo">
+            <img src="https://placehold.co/250x100/red/white?text=Logo" alt="Logo">
         </div>
-
-        <div class="nav-item" id="contest">
-          <img src="assets/navImages/contest.png" alt="Contest Icon" />
-          <p>Contest</p>
-        </div>
-
-        <div class="nav-item" id="stickers">
-          <img src="assets/navImages/sticker.png" alt="Stickers Icon" />
-          <p>Stickers</p>
-        </div>
-      </nav>
+        
+        <!-- <NavigationMenu/> -->
+        <nav>
+            <div>
+                <img src="./assets/navImages/sticker.png" alt="Stickers">
+                <p>Stickers</p>
+            </div>
+            <div>
+                <img src="./assets/navImages/workshop.png" alt="Workshop">
+                <p>Workshop</p>
+            </div>
+            <div>
+                <img src="./assets/navImages/contest.png" alt="Contest">
+                <p>Contest</p>
+            </div>
+        </nav>
     </header>
-
-    <div class="carouselContainer">
-      <img class="carouselImg" src="assets/carouselImages/IMAGE.png" alt="" />
-      <div class="dotContainer">
-        <span id="dot1" class="dot"></span>
-        <span id="dot2" class="dot"></span>
-        <span id="dot3" class="dot"></span>
-      </div>
+    <!-- <Carousel/> -->
+    <div class="carousel">
+        <img src="https://placehold.co/400x200/orange/white?text=Stickers" alt="Carousel Images">
+        <div class="dots">
+            <span id="dot0" class="dot"></span>
+            <span id="dot1" class="dot"></span>
+            <span id="dot2" class="dot"></span>
+        </div>
     </div>
 
-    <!-- This container contains cards, the cards will create by using javaScript -->
-    <div class="container"></div>
+    <!-- Gallery Button -->
+    <div class="gallery">
+        <button class="pushable">
+            <span class="front">Gallery</span>
+        </button>
+    </div>
 
-    <!-- ..........................................footer.................................... -->
-    <footer class="footer-container">
-      <p class="follow-us">Follow us</p>
+    <!-- <AlphabetCards/> -->
+    <div class="container">        
+    </div>
 
-      <!-------------------------------------------- This div contains social media icons --------------->
-      <div class="footer-icons-div">
-        <a href="" class="fa fa-facebook" target="_blank"></a>
-        <a href="" class="fa fa-instagram" target="_blank"></a>
-        <a href="" class="fa fa-youtube" target="_blank"></a>
-        <a href="" class="fa fa-linkedin" target="_blank"></a>
-        <a href="" class="fa fa-twitter" target="_blank"></a>
-      </div>
-      <ul class="footer-text-ul">
-        <li>Contact Us</li>
-        <li>Careers</li>
-        <li>Terms of use</li>
-        <li>Privacy policy</li>
-        <li>Make a donation</li>
-      </ul>
+    <!-- Submit Your Art Button -->
+    <div class="call-to-action">
+        <button class="pushable">
+            <span class="front">Submit Your Art</span>
+        </button>
+    </div>
 
-      <!-- sajhe sapne logo image -->
-      <div class="footer-sajheLogo-div">
-        <img src="assets/logo/sajheLogo.jpg" alt="sajhe-sapne-logo" />
-      </div>
-
-      <!-- sajhe sapne website link -->
-      <div class="sajhe-web-divs">
-        <a href="" target="_blank">www.sajhesapne.org</a>
-      </div>
+    <!-- <Footer/> -->
+    <footer>
+        <div class="social-media">
+            <p>Follow Us</p>
+            <ul>
+                <li><img src="./assets/social/fb.png" alt="Facebook"></li>
+                <li><img src="./assets/social/insta.png" alt="Instagram"></li>
+                <li><img src="./assets/social/you.png" alt="Youtube"></li>
+                <li><img src="./assets/social/in.png" alt="LinkedIn"></li>
+                <li><img src="./assets/social/x.png" alt="X"></li>
+            </ul>
+        </div>
+        <div class="links">
+            <ul>
+                <li>Contact Us</li>
+                <li>Terms Of Use</li>
+                <li>Report A Bug</li>
+                <li>Hire a Sapnewaali</li>
+                <li>Make a Donation</li>
+            </ul>
+        </div>
     </footer>
 
-    <script src="main.js"></script>
-  </body>
+    <script type="module" src="main.js"></script>
+</body>
 </html>
