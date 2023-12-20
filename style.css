@@ -313,7 +313,6 @@ footer {
 
 .social-media p:hover{
   cursor: pointer;
-  text-decoration: underline;
   opacity: 0.9;
 }
 
