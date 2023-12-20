@@ -310,7 +310,7 @@ footer {
   opacity: 0.9;
 }
 
-.social-media p:hover{
+.social-media img:hover{
   cursor: pointer;
   opacity: 0.9;
 }
