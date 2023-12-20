@@ -9,13 +9,16 @@ const dots = document.querySelectorAll(".dot")
 // make a var for store aphabets
 let i = 0;
 let alphabet;
-
+// this  carouselImg array for carousel images
 let carouselImgArr = [
     "images/crouselImage/image1.jpeg",
     "images/crouselImage/image2.jpeg",
     "images/crouselImage/image3.jpeg"
 ]
 // console.log(carouselImg)
+
+let soundArr = ["Apple", "Ball", "Cat", "Dog", "Elephant", "Fish", "Goat", "Hourse", "Igloo", "Joker", "King", "Lion"
+    , "Monkey", "Nose", "Octopus", "Pig", "Queen", "Rocket", "Snake", "Tiger", "Umbrella", "Van", "Watermelon", "X-ray", "Yak", "Zebra"]
 
 autoplay = setInterval(function () {
     i++;
@@ -27,7 +30,7 @@ autoplay = setInterval(function () {
 
     if (i > 2)
         i = 0;
-    crouselImage.setAttribute("src",carouselImgArr[i]);
+    crouselImage.setAttribute("src", carouselImgArr[i]);
 }, 1200);
 
 
@@ -73,22 +76,24 @@ for (let i = 65, j = 0, k = 0; i <= 90; i++, j++, k++) {
     container.appendChild(flipCard)
     flipCard.setAttribute("class", "flipCard")
 
+    let word = document.createElement("p")
+    word.setAttribute("class", "words")
+    word.innerHTML=soundArr[k]
+    backDivs.appendChild(word)
+
     //When we will click any abphabet then show back side of the card
 
     flipCard.addEventListener("click", () => {
         flipCard.classList.toggle("flipped")
-        //this autoplay for carousel images 
-        let soundArr = ["apple", "ball", "cat", "dog", "elephant", "fish", "giraffe", "hourse", "igloo", "joker", "king", "lion"
-            , "monkey", "nose", "octopus", "pen", "queen", "rabbit", "snake", "tiger", "umbrela", "ven", "watermelon", "x-ray", "yak", "zebra"]
+
         let sound = new SpeechSynthesisUtterance();
         sound.text = soundArr[k]
         window.speechSynthesis.speak(sound);
     })
-
-
-
 }
-// this  carouselImg array for carousel images
+
+
+
 
 
 
