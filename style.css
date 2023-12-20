@@ -300,6 +300,33 @@ footer{
     margin-bottom: 15px;
 }
 
+.sajhe-link-logo{
+width: 80%;
+margin: auto;
+margin-bottom: 40px;
+font-family: Roboto;
+}
+
+.sajhe-link-logo img{
+width: 15%;
+height: 15%;
+border-radius: 8%;
+max-height: 100px;
+max-width: 100px;
+margin-top: 20px; 
+}
+
+.sajhe-link-logo a{
+color: #ffff;
+text-decoration: none;
+}
+
+
+
+
+
+
+
 
 /* Media query to change grid count and text size for different screen sizes */
 @media (min-width:320px)  {
