@@ -30,8 +30,6 @@ let words = [
 
 //Set up text to speech
 var msg = new SpeechSynthesisUtterance();
-var voices = window.speechSynthesis.getVoices();
-msg.voice = voices[7];
 
 // Add Alphabet Cards
 let container = document.querySelector(".container");
