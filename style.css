@@ -6,7 +6,6 @@
 
 body {
     background-image: url('images/BackgroundPattern.png');
-    /* width: 100%; */
     overflow-x: hidden
 }
 
@@ -313,7 +312,7 @@ header {
         grid-template-columns: repeat(2, minmax(300px, 1fr));
     }
 
-    .front-div p {
+    .front-div p{
         font-size: 13em;
     }
 }
@@ -330,7 +329,7 @@ header {
         grid-template-columns: repeat(3, minmax(330px, 1fr));
     }
 
-    .backCard-cotainer p {
+    .backCard-cotainer{
         font-size: 3em;
     }
 }
