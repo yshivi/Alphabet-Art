@@ -10,7 +10,7 @@ body {
     overflow-x: hidden
 }
 
-.img-logo{
+.img-logo {
     width: 50%;
 }
 
@@ -146,10 +146,10 @@ header {
     text-align: center;
 }
 
-#sapnewaalis{
+#sapnewaalis {
     display: flex;
     justify-content: center;
-    font-size: 180%;
+    font-size: 160%;
 }
 
 .print1 {
@@ -206,7 +206,8 @@ header {
     margin: auto;
     border-radius: 10%;
 }
-.words{
+
+.words {
     font-family: Mochiy Pop One;
     margin: 6px;
     color: blue;
@@ -321,7 +322,7 @@ header {
     .container {
         grid-template-columns: repeat(3, minmax(300px, 1fr));
 
-}
+    }
 }
 
 @media (min-width:1025px) {
@@ -338,11 +339,5 @@ header {
     .container {
         grid-template-columns: repeat(3, minmax(400px, 1fr));
         gap: 50px;
-    }
-
-    .front-div p {
-        p {
-            font-size: 16em;
-        }
     }
 }
