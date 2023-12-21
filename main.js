@@ -11,9 +11,9 @@ let i = 0;
 let alphabet;
 // this  carouselImg array for carousel images
 let carouselImgArr = [
-    "images/crouselImage/image1.jpeg",
-    "images/crouselImage/image2.jpeg",
-    "images/crouselImage/image3.jpeg"
+    "images/crouselImage/image1.png",
+    "images/crouselImage/image2.png",
+    "images/crouselImage/image3.png"
 ]
 // console.log(carouselImg)
 
