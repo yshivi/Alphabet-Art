@@ -20,11 +20,10 @@ header {
 
 
 .navigation-bar {
-    display: flex;
+    display: grid;
     width: 100%;
-    /* min-width: 320px; */
     background-color: #1375E4;
-    justify-content: space-evenly;
+    grid-template-columns: auto auto auto;
     margin-bottom: 20px;
     text-align: center;
 }
@@ -49,10 +48,6 @@ header {
     text-align: center;
 }
 
-.carousel-div {
-    align-items: center;
-}
-
 .carousel-img {
     width: 100%;
     object-fit: cover;
@@ -65,8 +60,8 @@ header {
 }
 
 .gallery-button {
-    display: flex;
-    justify-content: end;
+    display: grid;
+    justify-items: end;
     padding: 10px;
     border-radius: 10%;
 }
@@ -121,9 +116,8 @@ header {
     height: 100%;
     position: absolute;
     border-radius: 10%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    place-items: center;
 }
 
 .backCard-cotainer {
@@ -142,12 +136,13 @@ header {
     font-weight: 400;
     letter-spacing: 0em;
     line-height: 6px;
-    text-align: center;
+    display: grid;
+    justify-items: center;
 }
 
 #sapnewaalis {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    justify-items: center;
     font-size: 160%;
 }
 
