@@ -51,7 +51,7 @@ header {
 }
 
 .carousel-img {
-    min-height: 400px;
+    max-height: 500px;
     width:  100%;
     object-fit: cover;
 }
@@ -212,6 +212,12 @@ header {
     /* font-size: 30px; */
 }
 
+.combine-icon{
+    display: flex;
+    justify-content: space-evenly;
+    color: blue;
+} 
+
 .flipCard {
     position: relative;
     transition: transform 1s;
@@ -274,7 +280,7 @@ header {
 
 .sajhe-logo {
     border-radius: 50%;
-    margin: 10px 0px 15px 37px;
+    margin: 9px 0px 15px 20px;
 }
 
 .sajhe-web {
@@ -296,6 +302,12 @@ header {
 @media (min-width:320px) {
     .container {
         grid-template-columns: repeat(2, minmax(150px, 1fr));
+    }
+    .carousel-img{
+        min-height: 200px;
+    }
+    .combine-icon{
+        height: 10%;
     }
 }
 
@@ -326,9 +338,12 @@ header {
     .container {
         grid-template-columns: repeat(3, minmax(330px, 1fr));
     }
+    .combine-icon{
+        height: 11%;
+    }
 
     .backCard-cotainer{
-        font-size: 3em;
+        font-size: 2em;
     }
 }
 

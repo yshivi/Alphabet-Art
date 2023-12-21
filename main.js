@@ -70,6 +70,29 @@ for (let i = 65, j = 0, k = 0; i <= 90; i++, j++, k++) {
     backDivs.appendChild(imageArr)
     //console.log(imageArr)
 
+    // icon imges in the back-div of the cards 
+
+    let imageLikes = document.createElement("img")
+    imageLikes.setAttribute("src", "images/backCard-icon/likes.png")
+    backDivs.appendChild(imageLikes)
+
+    let imageExpend = document.createElement("img")
+    imageExpend.setAttribute("src", "images/backCard-icon/expend.png")
+    backDivs.appendChild(imageExpend)
+
+    let imageShare = document.createElement("img")
+    imageShare.setAttribute("src", "images/backCard-icon/share.png")
+    backDivs.appendChild(imageShare)
+
+    let combineIcon = document.createElement("div")
+    combineIcon.appendChild(imageLikes)
+    combineIcon.appendChild(imageExpend)
+    combineIcon.appendChild(imageShare)
+    combineIcon.setAttribute("class","combine-icon")
+    backDivs.appendChild(combineIcon)
+
+
+ 
     let flipCard = document.createElement("div")
     flipCard.appendChild(frontDiv)
     flipCard.appendChild(backDivs)
@@ -78,7 +101,7 @@ for (let i = 65, j = 0, k = 0; i <= 90; i++, j++, k++) {
 
     let word = document.createElement("p")
     word.setAttribute("class", "words")
-    word.innerHTML=soundArr[k]
+    word.innerHTML = soundArr[k]
     backDivs.appendChild(word)
 
     //When we will click any abphabet then show back side of the card
