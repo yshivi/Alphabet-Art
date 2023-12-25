@@ -70,29 +70,6 @@ for (let i = 65, j = 0, k = 0; i <= 90; i++, j++, k++) {
     backDivs.appendChild(imageArr)
     //console.log(imageArr)
 
-    // icon imges in the back-div of the cards 
-
-    let imageLikes = document.createElement("img")
-    imageLikes.setAttribute("src", "images/backCard-icon/likes.png")
-    backDivs.appendChild(imageLikes)
-
-    let imageExpend = document.createElement("img")
-    imageExpend.setAttribute("src", "images/backCard-icon/expend.png")
-    backDivs.appendChild(imageExpend)
-
-    let imageShare = document.createElement("img")
-    imageShare.setAttribute("src", "images/backCard-icon/share.png")
-    backDivs.appendChild(imageShare)
-
-    let combineIcon = document.createElement("div")
-    combineIcon.appendChild(imageLikes)
-    combineIcon.appendChild(imageExpend)
-    combineIcon.appendChild(imageShare)
-    combineIcon.setAttribute("class","combine-icon")
-    backDivs.appendChild(combineIcon)
-
-
- 
     let flipCard = document.createElement("div")
     flipCard.appendChild(frontDiv)
     flipCard.appendChild(backDivs)
@@ -107,16 +84,57 @@ for (let i = 65, j = 0, k = 0; i <= 90; i++, j++, k++) {
     //When we will click any abphabet then show back side of the card
 
     flipCard.addEventListener("click", () => {
-        flipCard.classList.toggle("flipped")
+        flipCard.classList.add("flipped")
 
         let sound = new SpeechSynthesisUtterance();
         sound.text = soundArr[k]
         window.speechSynthesis.speak(sound);
     })
+    // create a div in the backDivs
+    let faIcons = document.createElement("div")
+    faIcons.classList.add("fa-icons")
+    backDivs.appendChild(faIcons);
+
+    // create a likeIcon in the newDiv
+    let like = document.createElement("i")
+    like.classList.add("fa-regular", "fa-heart");
+    faIcons.appendChild(like);
+
+    // create expend icon==================================
+
+    let expend = document.createElement("i")
+    expend.classList.add("fa-solid", "fa-arrow-rotate-left");
+    faIcons.appendChild(expend);
+
+    // ====================create share icon ===============================
+
+    let share = document.createElement("i")
+    share.classList.add("fa-solid", "fa-share-from-square")
+    faIcons.appendChild(share);
+
+    //=======================flipIcon==============
+
+    expend.addEventListener("click", (event) => {
+        flipCard.classList.remove("flipped");
+        event.stopPropagation();
+    });
+
+    //============================like icon=======
+
+    like.addEventListener("click", (event) => {
+        like.classList.toggle("fa-solid");
+        like.style.color = "red";
+        event.stopPropagation();
+
+    });
+    like.addEventListener("mouseover", (event) => {
+        like.claasList.add("fa-bounce");
+        event.stopPropagation()
+    })
+
+    like.addEventListener("mouseleave", (event) => {
+        like.classList.remove("fa-bounce");
+        event.stopPropagation();
+    })
+
 }
-
-
-
-
-
-
