@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css?family=Mochiy Pop One");
+@import url('https://fonts.googleapis.com/css?family=Mochiy Pop One');
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url('https://fonts.googleapis.com/css?family=Inter');
 
 body {
   margin: 0;
@@ -47,6 +48,13 @@ nav div p {
   width: 80%;
   margin: auto;
   margin-top: 5px;
+}
+.text-container p{
+  font-family: Inter;
+}
+.art-workshop{
+  font-family: 'Mochiy Pop One';
+  color: #1375E4;
 }
 
 .upcoming-text {
@@ -175,7 +183,11 @@ footer {
     font-size: 1.2em;
   }
   #text-container p{
-    font-family: Roboto;
     font-size: 1.2em;
   }
+  .upcoming-text {
+    font-family: 'Mochiy Pop One';
+    color: #1375E4;
+  }  
+  
 }
