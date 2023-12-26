@@ -4,83 +4,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ALPHABET ART</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/41c3f97ee8.js" crossorigin="anonymous"></script>
+    <title>Alphabet Art</title>
 </head>
+
 <body>
     <header>
-        <img class="img-logo" src="images/navImages/nav image.jpeg" alt="alphabet Art">
-        <nav class="navigation-bar">
-            <div class="nav-item">
-                <img src="images/navImages/nav 4 image.jpeg" class="nav-img" alt="workshop">
+        <!-- <Logo/> -->
+        <div class="logo">
+            <img src="https://placehold.co/250x100/red/white?text=Logo" alt="Logo">
+        </div>
+
+        <!-- <NavigationMenu/> -->
+        <nav>
+            <div>
+                <a href="stickers/index.html"><img src="./assets/navImages/sticker.png" alt="Stickers"></a>
+                <p>Stickers</p>
+            </div>
+            <div>
+                <a href="workshop/index.html"><img src="./assets/navImages/workshop.png" alt="Workshop"></a>
                 <p>Workshop</p>
             </div>
-            <div class="nav-item">
-                <img src="images/navImages/nav 3 image.jpeg" class="nav-img" alt="contest">
+            <div>
+                <a href="contest/index.html"><img src="./assets/navImages/contest.png" alt="Contest"></a>
                 <p>Contest</p>
-            </div>
-            <div class="nav-item">
-                <img src="images/navImages/nav 2 image.jpeg" class="nav-img" alt="stickers">
-                <p>Stickers</p>
             </div>
         </nav>
     </header>
-    <div class="carousel-div">
-        <img class="carousel-img" src="images/crouselImage/image1.png" alt="carousel-img">
-    </div>
-
-    <div class="dot-container">
-        <span class="dot" id="dot1"></span>
-        <span class="dot" id="dot2"></span>
-        <span class="dot" id="dot3"></span>
-    </div>
-
-    <div class="gallery-button">
-        <button class="button">Gallery</button>
-    </div>
-
-    <!--this is for contain all divs by using javaScript-->
-    <div class="container"></div>
-
-    <div class="submit-button">
-        <button class="button">Submit entry</button>
-    </div>
-
-    <!-- <div class="sapnewali">
-        <img src="images/backCard-icon/made with sapnewali.png" alt="">
-    </div> -->
-
-    <footer class="footer-container">
-        <p class="follow-us">Follow Us</p>
-        <div class="footer-icons-div">
-            <!--this is for social media icones link-->
-            <a href="https://www.facebook.com/hashtag/sajhesapne/?source=feed_text&epa=HASHTAG" class="fa fa-facebook"
-                target="_blank" <img src="alphabet images/facebook image.png"></a>
-            <a href="https://instagram.com/sapnewaali?igshid=OGQ5ZDc2ODk2ZA==" class="fa fa-instagram"
-                target="_blank"></a>
-            <a href="https://www.youtube.com/watch?v=02sOhwJnPdo" class="fa fa-youtube" target="_blank"></a>
-            <a href="https://www.linkedin.com/company/sajhe-sapne/" class="fa fa-linkedin" target="_blank"></a>
-            <a href="https://twitter.com/sajhesapne" class="fa fa-twitter" target="_blank"></a>
+    <!-- <Carousel/> -->
+    <div class="carousel">
+        <img src="https://placehold.co/400x200/orange/white?text=Stickers" alt="Carousel Images">
+        <div class="dots">
+            <span id="dot0" class="dot"></span>
+            <span id="dot1" class="dot"></span>
+            <span id="dot2" class="dot"></span>
         </div>
+    </div>
 
-        <ul class="footer-text-ul">
-            <li class="footer-text">Contact Us</li>
-            <li class="footer-text">Careers</li>
-            <li class="footer-text">Terms of use</li>
-            <li class="footer-text">Privacy policy</li>
-            <li class="footer-text">Make a donation</li>
-        </ul>
+    <!-- Gallery Button -->
+    <div class="gallery">
+        <button class="pushable">
+            <span class="front">Gallery</span>
+        </button>
+    </div>
 
-        <div class="footer-sajheLogo-div"> <!--sajhe sapne logo img-->
-            <img class="sajhe-logo" src="images/navImages/sajhe_sapne_logo.jpeg" alt="sajhe-logo">
+    <!-- <AlphabetCards/> -->
+    <div class="container">
+    </div>
+
+    <!-- Submit Your Art Button -->
+    <div class="call-to-action">
+        <button class="pushable">
+            <span class="front">Submit Your Art</span>
+        </button>
+    </div>
+
+    <!-- <Footer/> -->
+    <footer>
+        <div class="social-media">
+            <p>Follow Us</p>
+            <ul>
+                <li> <a href="https://www.facebook.com/hashtag/sajhesapne/?source=feed_text&epa=HASHTAG"><img
+                            src="./assets/social/fb.png" alt="Facebook"> </a></li>
+                <li> <a href="https://www.instagram.com/sapnewaali/"><img src="./assets/social/insta.png"
+                            alt="Instagram"></a></li>
+                <li><a href="https://www.youtube.com/channel/UC2YOf3houhn92YC2JsNhHxw?app=desktop"><img
+                            src="./assets/social/you.png" alt="Youtube"></a></li>
+                <li><a href="https://in.linkedin.com/company/sajhe-sapne"><img src="./assets/social/in.png"
+                            alt="LinkedIn"></a></li>
+                <li><a href="https://twitter.com/sajhesapne?lang=en"><img src="./assets/social/x.png" alt="X"></a></li>
+            </ul>
         </div>
-
-        <div class="sajhe-web-divs"><!--sajhe sapne website link-->
-            <a class="sajhe-web" href="htts://sajhesapne.org/about" target="_blank">www.sajhesapne.org</a>
+        <div class="links">
+            <ul>
+                <li>Contact Us</li>
+                <li>Terms Of Use</li>
+                <li>Report A Bug</li>
+                <li>Hire a Sapnewaali</li>
+                <li>Make a Donation</li>
+            </ul>
+        </div>
+        <div class="sajhe-link-logo">
+            <img src="assets/sajhe-logo.jpeg" alt="sajhe-spne-logo"><br>
+            <a href="https://sajhesapne.org/about" target="_blank">www.sajhesapne.org</a>
         </div>
     </footer>
-    <script src="main.js"></script>
+
+    <script type="module" src="main.js"></script>
 </body>
 
 </html>
