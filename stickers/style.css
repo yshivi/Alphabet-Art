@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Inter');
 
-body{
+body {
     margin: auto;
 }
 
@@ -8,10 +8,10 @@ body{
     display: block;
     margin: 10px auto;
     cursor: pointer;
-  }
-  
-  /* Navigation Menu */
-  nav {
+}
+
+/* Navigation Menu */
+nav {
     display: flex;
     justify-content: space-evenly;
     background-color: #1375E4;
@@ -19,9 +19,9 @@ body{
     font-weight: 400;
     font-size: 1em;
     color: #FFFFFF;
-  }
-  
-  nav div {
+}
+
+nav div {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -30,38 +30,50 @@ body{
     margin-bottom: 5px;
     cursor: pointer;
     /* margin: 5px auto; */
-  }
-  
-  nav div img {
+}
+
+nav div img {
     border-radius: 50%;
-  }
-  
-  nav div p {
+}
+
+nav div p {
     margin: 0;
-  }
-  .form{
-    margin-left: 50px;
-    width: 80%;
-  }
+}
 
-/* .product-photo {
-    width: 163px;
-    height: 160px;
-    top: 301px;
-    left: 24px;
-    gap: 10px;
-    background-color: lightcyan;
-} */
+.form-body {
+    background-color: white;
+    padding: 5px 10px;
+}
 
-/* p {
-    width: 342px;
-    height: 48px;
-    top: 1238px;
-    left: 24px;
-    gap: 8px;
+.row{
+    display: flex;
+}
 
+.input-group{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+}
 
-} */
+label{
+    color: #1375E4;
+    font-size: 15px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"]{
+    width: 100%;
+    font-size: 18px;
+    height: 34px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px;
+    background-color: white;
+    outline: none;
+    border-bottom: 1px solid #d6d6d6;
+}
 
 .call-to-action {
     width: 80%;
@@ -92,12 +104,13 @@ body{
     transform: translateY(-6px);
 }
 
-label{
+
+/* label{
     font-family: inter;
     font-size: 20px;
     font-weight: 100;
     color: #1375E4;
-}
+} */
 
 footer {
     background-color: #1375E4;
@@ -153,4 +166,11 @@ footer {
 .social-media img:hover {
     cursor: pointer;
     opacity: 0.9;
+}
+
+@media only screen and (max-width:600px) {
+
+    .row{
+        flex-direction: column;
+    }   
 }
