@@ -66,6 +66,7 @@ nav div p {
 table {
   margin: auto;
   text-align: center;
+  border-collapse: collapse;
 }
 
 #tr-row1 {
@@ -189,5 +190,4 @@ footer {
     font-family: 'Mochiy Pop One';
     color: #1375E4;
   }  
-  
 }
