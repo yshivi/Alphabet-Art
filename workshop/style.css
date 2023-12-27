@@ -58,7 +58,8 @@ nav div p {
   font-family: 'Mochiy Pop One';
   color: #1375E4;
 }
-#workshop-image img{
+
+#workshop-image img {
   width: 100%;
 }
 
@@ -88,7 +89,7 @@ table {
   border-bottom: 1px solid #D9EBFF
 }
 
-td div{
+td div {
   margin: auto;
   margin-top: 10px;
 }
@@ -98,7 +99,7 @@ td div button {
   border-radius: 20px;
   border: none;
   padding: 0;
- 
+
 }
 
 td div button span {
@@ -106,7 +107,7 @@ td div button span {
   padding: 2px 24px;
   border-radius: 12px;
   font-size: 0.9em;
-  background:  #59CDFF;
+  background: #59CDFF;
   font-family: 'Mochiy Pop One';
   color: white;
   transform: translateY(-6px);
@@ -121,13 +122,16 @@ footer {
   position: absolute;
   width: 100%;
 }
-.fa-heart{
+
+.fas {
   color: red;
 }
 
-.sapne-waalis p{
+.sapne-waali {
   font-family: 'Mochiy Pop One';
   color: #1375E4;
+  margin-top: 4.5em;
+  margin-left: 3.2em;
 }
 
 .social-media,
@@ -181,6 +185,16 @@ footer {
   .logo img {
     height: 50px;
   }
+
+  .sapne-waali {
+    margin-left: 1.5em;
+  }
+}
+
+@media (min-width:375px) {
+  .sapne-waali {
+    margin-left: 3em;
+  }
 }
 
 @media (min-width:425px) {
@@ -196,11 +210,17 @@ footer {
   .table-tr td button {
     height: 50px;
   }
+
   td div button span {
     padding: 8px 24px;
   }
-  .table-tr{
+
+  .table-tr {
     font-size: 0.9em;
+  }
+
+  .sapne-waali {
+    margin-left: 4.8em;
   }
 }
 
@@ -236,7 +256,25 @@ footer {
     padding: 22px 20px;
   }
 
-  td div button{
+  td div button {
     width: 20%;
+  }
+
+  .sapne-waali {
+    margin-left: 8em;
+    font-size: 1.5em;
+  }
+}
+
+@media(min-width:1024px) {
+  .sapne-waali {
+    margin-left: 14em;
+  }
+}
+
+@media(min-width:1228px) {
+  .sapne-waali {
+    margin-top: 8em;
+    margin-left: 20em;
   }
 }
