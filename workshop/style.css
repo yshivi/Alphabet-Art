@@ -49,12 +49,17 @@ nav div p {
   margin: auto;
   margin-top: 5px;
 }
-.text-container p{
+
+.text-container p {
   font-family: Inter;
 }
-.art-workshop{
+
+.art-workshop {
   font-family: 'Mochiy Pop One';
   color: #1375E4;
+}
+#workshop-image img{
+  width: 100%;
 }
 
 .upcoming-text {
@@ -73,19 +78,38 @@ table {
   background-color: #1375E4;
   font-family: Inter;
   color: #FFFFFF;
+
 }
 
-.table-tr{
+.table-tr {
   font-family: Roboto;
   font-size: 0.8em;
+  color: #1375E4;
+  border-bottom: 1px solid #D9EBFF
 }
 
-.table-tr td button{
-  background-color: #59CDFF;
+td div{
+  margin: auto;
+  margin-top: 10px;
+}
+
+td div button {
+  background: #1375E4;
+  border-radius: 20px;
+  border: none;
+  padding: 0;
+ 
+}
+
+td div button span {
+  display: block;
+  padding: 2px 24px;
+  border-radius: 12px;
+  font-size: 0.9em;
+  background:  #59CDFF;
   font-family: 'Mochiy Pop One';
-  color: #FFFFFF;
-  border-bottom: 4px solid #1375E4;
-  border-radius: 15%;
+  color: white;
+  transform: translateY(-6px);
 }
 
 footer {
@@ -145,49 +169,66 @@ footer {
 }
 
 /* Media queries */
-@media (min-width: 320px){
-  .logo img{
+@media (min-width: 320px) {
+  .logo img {
     height: 50px;
   }
 }
 
-@media (min-width:425px){
+@media (min-width:425px) {
   table {
     margin: auto;
     width: 100%;
   }
+
   .logo img {
     min-height: 60px;
   }
-  .table-tr td button{
+
+  .table-tr td button {
     height: 50px;
+  }
+  td div button span {
+    padding: 8px 24px;
+  }
+  .table-tr{
+    font-size: 0.9em;
   }
 }
 
-@media(min-width:768px){
+@media(min-width:768px) {
   table {
     margin: auto;
     width: 100%;
   }
-  .logo img{
+
+  .logo img {
     min-height: 100px;
   }
-  .table-tr td button{
+
+  .table-tr td button {
     min-height: 65px;
     width: 90%;
   }
-  .table-tr{
+
+  .table-tr {
     font-family: Roboto;
     font-size: 1.2em;
   }
+
   #tr-row1 {
     font-size: 1.2em;
   }
-  #text-container p{
+
+  #text-container p {
     font-size: 1.2em;
   }
-  .upcoming-text {
-    font-family: 'Mochiy Pop One';
-    color: #1375E4;
-  }  
+
+  td div button span {
+    padding: 22px 20px;
+  }
+
+  td div button{
+    width: 20%;
+  }
 }
