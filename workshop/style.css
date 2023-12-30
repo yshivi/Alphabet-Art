@@ -126,7 +126,8 @@ td div button span {
   font-family: 'Mochiy Pop One';
   color: #1375E4;
   margin-top: 4.5em;
-  margin-left: 3.2em;
+ width: 100%;
+ text-align: center;
 }
 
 /*... ............footer............... */

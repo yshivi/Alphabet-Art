@@ -6,7 +6,7 @@ let nav = `<!-- <Logo/> -->
 <!-- <NavigationMenu/> -->
 <nav>
     <div>
-        <a href="stickers/index.html"><img src="/Alphabet-Art/assets/navImages/sticker.png" alt="Stickers"></a>
+        <a href=stickers/index.html"><img src="/Alphabet-Art/assets/navImages/sticker.png" alt="Stickers"></a>
         <p>Stickers</p>
     </div>
     <div>
@@ -18,5 +18,5 @@ let nav = `<!-- <Logo/> -->
         <p>Contest</p>
     </div>
 </nav>`
-let header = document.getElementById("headN");
+let header = document.getElementById("header");
 header.innerHTML = nav;
