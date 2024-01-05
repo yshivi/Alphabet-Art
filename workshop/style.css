@@ -37,10 +37,9 @@ nav div {
   /* margin: 5px auto; */
 }
 
-nav div:hover {
+nav div:hover{
   background-color: red;
 }
-
 nav div img {
   border-radius: 50%;
 }
@@ -263,34 +262,50 @@ nav div p {
   color: #007352;
 }
 
-
 /* Footer */
-footer {
+footer #tag {
+  text-align: center;
+  margin-top: 100px;
+  font-family: 'Mochiy Pop One';
+  font-size: 16px;
+  color: #1375E4;
+  /* border: 1px solid red; */
+}
+footer a { 
+  color: inherit;
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+#footer-links {
   background-color: #1375E4;
   color: white;
   font-size: 20px;
   font-family: Roboto;
-  margin-top: 20px;
+  margin-top: 10px;
   position: absolute;
   width: 100%;
 }
 
-.social-media,
-.links {
+.social-media{
   width: 80%;
   margin: auto;
   margin-top: 25px;
 }
 
-.social-media {
-  padding-top: 10px;
+.links{
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
 }
 
 .social-media ul {
   list-style: none;
   padding-left: 0;
   display: flex;
-  margin-top: -10px;
+  margin-top: 10px;
 }
 
 .social-media ul li {
@@ -316,18 +331,18 @@ footer {
   opacity: 0.9;
 }
 
-.social-media img:hover {
+.social-media img:hover{
   cursor: pointer;
   opacity: 0.9;
 }
 
 /* Workshop Page */
-.content {
+.content{
   width: 90%;
   margin: auto;
 }
 
-h1 {
+h1{
   font-family: "Mochiy Pop One";
   font-size: 20px;
   font-weight: 400;
@@ -351,12 +366,11 @@ h1 {
   align-content: center;
 }
 
-.content-image p {
+.content-image p{
   margin: auto;
   color: #1375E4;
 }
-
-.content-image img {
+.content-image img{
   max-width: 100%;
   height: auto;
   margin: auto;
@@ -383,7 +397,7 @@ th {
   padding: 10px 0px 10px 0px;
 }
 
-td {
+td{
   text-align: center;
   font-family: "Roboto";
   font-weight: 400;
@@ -408,25 +422,6 @@ td {
 .pushable:active .register {
   transform: translateY(-2px);
 }
-
-.sapne-waalis h2 {
-  font-family: 'Mochiy Pop One';
-  color: #1375E4;
-  text-align: center;
-  margin-top: 50px;
-  font-size: 20px;
-  font-weight: 400;
-}
-
-.fa {
-  color: red;
-}
-
-a {
-  text-decoration: none;
-}
-
-
 
 /* Media query to change grid count and text size for different screen sizes */
 @media (min-width:320px) {
@@ -490,10 +485,9 @@ a {
     font-size: 25px;
   }
 
-  h1 {
+  h1{
     font-size: 24px;
   }
-
   .content p {
     font-size: 20px;
   }
@@ -533,7 +527,7 @@ a {
     font-size: 25px;
   }
 
-  h1 {
+  h1{
     font-size: 24px;
   }
 
@@ -576,11 +570,11 @@ a {
     font-size: 30px;
   }
 
-  h1 {
+  h1{
     font-size: 45px;
   }
 
-  .content p {
+  .content p{
     font-size: 26px;
   }
 
@@ -621,11 +615,11 @@ a {
     font-size: 35px;
   }
 
-  h1 {
+  h1{
     font-size: 45px;
   }
 
-  .content p {
+  .content p{
     font-size: 26px;
   }
 
