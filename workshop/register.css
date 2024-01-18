@@ -1,0 +1,80 @@
+body{
+  background-image: none;
+}
+
+.register-form{
+  width: 85%;
+  margin: auto;
+}
+
+form {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 20px;
+  font-size: 20px;
+  font-family: "Roboto";
+  font-weight: 600;
+  color: #1375E4;
+  ;
+}
+
+input, label{
+  display: block;
+  width: 95%;
+  margin-bottom: 10px;
+}
+
+label {
+  margin-left: 5px;
+}
+input {
+  border: 1px solid #8BC7FF;
+  border-radius: 8px;
+  height: 48px;
+  font-family: "Roboto";
+  font-size: 16px;
+  padding-left: 20px;
+}
+
+::placeholder{
+  color: #8BC7FF;
+  opacity: 1;
+}
+
+form .call-to-action {
+  grid-area: 5 / 1 / span 1/ span 6;
+}
+
+.name {
+  grid-area: 1 / 1 / span 1/ span 4;
+}
+
+.age {
+  grid-area: 1 / 5 / span 1/ span 2;
+}
+
+.email {
+  grid-area: 2 / 1 / span 1 / span 3;
+}
+
+.mobile {
+  grid-area: 2 / 4 / span 1 / span 3;
+}
+
+.address {
+  grid-area: 3 / 1 / span 1 / span 6;
+}
+
+.state {
+  grid-area: 4 / 1 / span 1 / span 2;
+}
+
+.city {
+  grid-area: 4 / 3 / span 1 / span 2;
+}
+
+.pincode {
+  grid-area: 4 / 5 / span 1 / span 2;
+}
+
