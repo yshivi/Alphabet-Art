@@ -5,7 +5,8 @@
 body {
     margin: 0;
 }
-.sticker-div{
+
+.sticker-div {
     width: 80%;
     margin: auto;
 }
@@ -21,6 +22,7 @@ hr {
     width: 80%;
     margin: auto;
     border: 2px solid #8BC7FF;
+    ;
 }
 
 .product-div {
@@ -41,44 +43,6 @@ hr {
     font-family: 'Mochiy Pop One';
     font-weight: 400;
     margin-bottom: 20px;
-}
-
-.form {
-    font-family: inter;
-    background-color: white;
-    width: 80%;
-    margin: auto;
-}
-
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    margin-bottom: 10px;
-}
-
-.input-group {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="number"] {
-    width: 100%;
-    font-size: 18px;
-    height: 34px;
-    border-radius: 5px;
-    background-color: white;
-}
-
-input {
-    border: 2px solid #8BC7FF;
-}
-
-::placeholder {
-    color: #8BC7FF;
 }
 
 .Make-payment {
@@ -112,13 +76,6 @@ input {
     transform: translateY(-6px);
 }
 
-label {
-    /* font-family: inter; */
-    font-size: 20px;
-    font-weight: 600;
-    color: #1375E4;
-}
-
 .fas {
     color: red;
 }
@@ -136,22 +93,135 @@ label {
     font-size: 18px;
 }
 
-@media only screen and (max-width:600px) {
+.form {
+    font-family: 'Inter';
+    width: 80%;
+    margin: auto;
 
-    .row {
-        flex-direction: column;
+}
+
+label {
+    display: block;
+    color: #1375E4;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 15px;
+}
+
+input {
+    width: 90%;
+    display: block;
+    border: 1px solid #8BC7FF;
+    font-weight: 400;
+    padding: 0 12px 0 12px;
+    /* margin-top: 20px; */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    font-size: 14px;
+    height: 34px;
+    border-radius: 8px;
+}
+
+::placeholder {
+    color: #8BC7FF;
+}
+
+@media (min-width:568px) {
+    form {
+        display: grid;
+        grid-template-columns: repeat(7 1fr);
+        grid-template-rows: repeat(2 1fr);
+        font-family: 'Inter';
+        width: 80%;
+        margin: auto;
     }
-}
 
-.cityPin {
-    display: flex;
-    gap: 15px;
-}
+    .name {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
 
-#city {
-    width: 100%;
-}
+    #name {
+        width: 145%;
+        /* margin: 5px; */
+    }
 
-#pincode {
-    width: 100%;
+    .email {
+        grid-column-start: 1;
+        grid-column-end: 5;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    .number {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+
+    #address1 {
+        width: 97%;
+    }
+
+    .add-1 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+
+    #address2 {
+        width: 97%;
+    }
+
+    .add-2 {
+        grid-column-start: 1;
+        grid-column-end: 7;
+        grid-row-start: 4;
+        grid-row-end: 5;
+    }
+
+    .state {
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .city {
+        grid-column-start: 3;
+        grid-column-end: 5;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    .pincode {
+        grid-column-start: 5;
+        grid-column-end: 7;
+        grid-row-start: 5;
+        grid-row-end: 6;
+    }
+
+    #city {
+        width: 85%;
+    }
+
+    #pincode {
+        width: 92%;
+    }
+
+    #state {
+        width: 84%;
+    }
+
+    #email-id {
+        width: 92%;
+    }
 }
