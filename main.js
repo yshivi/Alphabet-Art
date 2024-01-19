@@ -37,7 +37,7 @@ for(let i=65; i<=90; i++){
         //alphabet image
     let imgContainer = document.createElement("div");
     let alphabetImg = document.createElement("img");
-    alphabetImg.src = `https://placehold.co/312x256/pink/white?text=${alphabet}`;
+    alphabetImg.src = `./images/alphabetImages/${alphabet}.png`;
     imgContainer.appendChild(alphabetImg);
     frontCard.appendChild(imgContainer);
         //word for the alphabet

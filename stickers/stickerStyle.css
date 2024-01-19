@@ -4,6 +4,7 @@
 
 body {
     margin: 0;
+    background-image: url(./assets/bg_small.png);
 }
 
 .sticker-div {
@@ -93,23 +94,23 @@ hr {
     font-size: 18px;
 }
 
-.form {
+.form{
     font-family: 'Inter';
     width: 80%;
     margin: auto;
-
+    
 }
 
-label {
+label{
     display: block;
     color: #1375E4;
     font-size: 15px;
     font-weight: 600;
     margin-bottom: 10px;
-    margin-top: 15px;
+    margin-top: 25px;
 }
 
-input {
+input{
     width: 90%;
     display: block;
     border: 1px solid #8BC7FF;
@@ -120,108 +121,73 @@ input {
 
 input[type="text"],
 input[type="email"],
-input[type="number"] {
+input[type="number"]{
     font-size: 14px;
     height: 34px;
     border-radius: 8px;
 }
 
-::placeholder {
+::placeholder{
     color: #8BC7FF;
 }
 
-@media (min-width:568px) {
-    form {
+@media (min-width:768px){
+    form{
         display: grid;
-        grid-template-columns: repeat(7 1fr);
+        grid-template-columns: 200px 150px 200px;
         grid-template-rows: repeat(2 1fr);
         font-family: 'Inter';
         width: 80%;
         margin: auto;
     }
 
-    .name {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 1;
-        grid-row-end: 2;
+    .name{
+        grid-area:1/1/2/7;
     }
-
-    #name {
-        width: 145%;
-        /* margin: 5px; */
+    .email{
+        grid-area:2/1/3/5;
     }
-
-    .email {
-        grid-column-start: 1;
-        grid-column-end: 5;
-        grid-row-start: 2;
-        grid-row-end: 3;
+    .number{
+         grid-area:2/7/3/5;
     }
-
-    .number {
-        grid-column-start: 5;
-        grid-column-end: 7;
-        grid-row-start: 2;
-        grid-row-end: 3;
+    .add-1{
+        grid-area:3/1/4/7;
     }
-
-    #address1 {
-        width: 97%;
+    .add-2{
+      grid-area:4/1/5/7;
     }
-
-    .add-1 {
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 3;
-        grid-row-end: 4;
+    .state{
+        grid-area:5/1/6/3;
     }
-
-    #address2 {
-        width: 97%;
+    .city{
+        grid-area: 5/3/6/5;
     }
-
-    .add-2 {
-        grid-column-start: 1;
-        grid-column-end: 7;
-        grid-row-start: 4;
-        grid-row-end: 5;
+    .pincode{
+        grid-area:5/5/6/7;
     }
-
-    .state {
-        grid-column-start: 1;
-        grid-column-end: 3;
-        grid-row-start: 5;
-        grid-row-end: 6;
+ #city{
+    width: 88%;
+}
+    
+    #pincode{
+      width: 95%;
     }
-
-    .city {
-        grid-column-start: 3;
-        grid-column-end: 5;
-        grid-row-start: 5;
-        grid-row-end: 6;
+    #state{
+        width: 85%; 
+    } 
+    #email-id{
+        width: 95%;
+    } 
+    #name{
+        width: 98%;
     }
-
-    .pincode {
-        grid-column-start: 5;
-        grid-column-end: 7;
-        grid-row-start: 5;
-        grid-row-end: 6;
+    #address1{
+        width: 98%;
     }
-
-    #city {
-        width: 85%;
+    #address2{
+        width: 98%;
     }
-
-    #pincode {
-        width: 92%;
-    }
-
-    #state {
-        width: 84%;
-    }
-
-    #email-id {
-        width: 92%;
+    #number{
+        width: 95%;
     }
 }
